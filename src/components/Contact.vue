@@ -26,7 +26,7 @@
                                 <button type="submit" class="submit-btn pl-5 pr-5" :disabled="isLoading">{{isLoading ? "Sending ...": "Submit"}}</button>
                             </div>
                             <div class= "d-flex justify-content-end mt-2">
-                                <div ref="recatchaContainer"></div>
+                                <div ref="recaptchaContainer"></div>
                             </div>
                         </form>
                         
@@ -51,7 +51,7 @@ const isLoading =ref(false);
 const notyf = new Notyf();
 
 //Configuration needed for the recaptcha
-const SITE_KEY = '6LeCSEksAAAAAFYt4-UIu6cjE18WLXeMYHEhq_XU';
+const SITE_KEY = '6Lf9TEksAAAAAD66fQSzolYKwWMFXaGkn7XKBsuc';
 const recaptchaContainer = ref(null);
 const recaptchaWidgetId = ref(null);
 const recaptchaToken = ref('');
